@@ -1,0 +1,54 @@
+.meet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 1920px) {
+    align-self: center;
+
+    width: 1358px;
+  }
+
+  &__content {
+    width: 40%;
+
+    @media (max-width: 1279px) {
+      width: 60%;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__aboutus {
+    width: 700px;
+    height: 345px;
+
+    background: url(../images/about.png) no-repeat center/contain;
+
+    @media (max-width: 1919px) {
+      width: 500px;
+
+      background-image: url(../images/about-medium.png);
+    }
+
+    @media (max-width: 1279px) {
+      width: 232px;
+
+      background-image: url(../images/about-small.png);
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

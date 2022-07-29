@@ -1,0 +1,17 @@
+.play-button {
+  width: 248px;
+  height: 69px;
+
+  background: url(../images/play-button.svg);
+  border: 0;
+
+  @include hover(background, url(../images/play-button-hover.svg));
+
+  &__open {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+  }
+}

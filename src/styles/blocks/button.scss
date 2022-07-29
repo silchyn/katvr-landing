@@ -1,0 +1,25 @@
+.button {
+  width: 200px;
+  padding: 13px 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+
+  background-color: $contrast_color;
+  border: 0;
+  border-radius: 4px;
+
+  transition: color $transition_time, background-color $transition_time;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  &:hover {
+    color: $contrast_color;
+
+    background-color: #fff;
+  }
+}
